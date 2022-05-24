@@ -1,4 +1,4 @@
-## What is Quantum Computing good for?
+## What Is Quantum Computing Good for?
 
 Quantum Computing (QC) is now a darling of the media, where it is treated either a little bit like science fiction become reality or a technology to be approached with a raised eyebrow. Either way most articles don't seem to know why such a technology exists at all and what to expect of it. This is no surprise given the fantastic titles of papers containing words like "Quantum Supremacy" [1]. So expectations range from high to fantastic and some media articles even seem to suggest that QC some time in the future can replace classical computing (CC).
 

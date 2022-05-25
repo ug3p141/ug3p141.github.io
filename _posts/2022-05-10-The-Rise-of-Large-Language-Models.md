@@ -12,13 +12,14 @@ The next model of OpenAI GPT-4 is rumored to come in at 100 trillion parameters 
 
 Now one can ask if all this is necessary. Currently the common logic is going further by scaling models supported by studies which clearly link size of model to it's capabilities and claim universal scaling laws for this behavior [8]. According to the referenced paper by Kaplan et al. the model loss is reduced by one unit if the model is scaled by one order of magnitude (a factor of 10). But to make this happen compute effort in training and dataset size have to be scaled also [8][9].
 
-Besides cost there is obviously an accompanied enormous carbon footprint which has been discussed with AI training in general but has to be considered for scaling these models especially. The economic consequences of these trends leads to a monopolization of model providers. This can be felt already with the large models only available as commercial offerings through their creators [11] whereas prior smaller models are freely available through direct code download from research sites but more importantly specialised startups offering model repositories cleaned up and embedded in frameworkds ready for production [10].
+Besides cost there is obviously an accompanied enormous carbon footprint which has been discussed with AI training in general but has to be considered for scaling these models especially. The economic consequences of these trends leads to a monopolization of model providers. This can be felt already with the large models only available as commercial offerings through their creators [11] whereas prior smaller models are freely available through direct code download from research sites but more importantly specialised startups offering model repositories cleaned up and embedded in frameworks ready for production [10].
 
 If at the end of the day only super large AI companies like Google through OpenAI, Microsoft through Deepmind and Alibaba remain to commercialize this technology the consequences could be grave for the economy at large. The capabilities of the large models are already impressive and lead to a foreseeable future where every company is in need to use them to automate many standard tasks, from classification, summarization, generation of standard texts etc. Another problem lies in the fact that these few companies bring an unavoidable bias not only in the standard language they rely on but also in a subtler way through their cultures they are embedded in. Communities or whole nations relying on different languages and cultures will inevitably trail behind in using these technologies.
 
 It remains to be seen if the trend persists and how the world will respond to it.
 
 References
+
 [1] GPT-2 <https://openai.com/blog/better-language-models/>
 
 [2] GPT-3 <https://openai.com/blog/gpt-3-apps/>

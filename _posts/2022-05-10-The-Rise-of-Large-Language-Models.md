@@ -6,7 +6,7 @@ These parameters incur substantial compute costs in training. As a rough estimat
 
 Looking at the development of model size over time one can see an exponential increase over the last few years seeing an order of magnitude increase year over year.
 
-![timeline size of language models](assets/nlp_models_sizes_over_time.svg)
+![Size of language models over time](assets/nlp_models_sizes_over_time.png)
 
 The next model of OpenAI GPT-4 is rumored to come in at 100 trillion parameters (100 x 10E12). It's a bit unscientific but informative to compare this with the number of neurons in the human brain, which features approximately 100 billion neurons (100 x 10E9), that's a thousand times less[7].
 

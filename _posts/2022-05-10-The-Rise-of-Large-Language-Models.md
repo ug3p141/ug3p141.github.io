@@ -20,12 +20,21 @@ It remains to be seen if the trend persists and how the world will respond to it
 
 References
 [1] GPT-2 <https://openai.com/blog/better-language-models/>
+
 [2] GPT-3 <https://openai.com/blog/gpt-3-apps/>
+
 [3] GPT-3 official paper on arxiv: <https://arxiv.org/abs/2005.14165>
+
 [4] Estimate of compute cost: s. Abschnitt D in [3](page 46), compute cost per GPU e.g. Google Cloud approximately 1USD/hour for NVIDIA V100, spec V100 => 7 TFLOPs = 7 10^12 / s, 3.14 10^23 Flops => 3.14 10^23/7x10^12 / 3600 = 10^7 hours => 10 Mio USD, s. details  <https://github.com/ug3p141/nlp_models>
+
 [6] to compare with published data: <https://arxiv.org/abs/2201.11990> (page 2)
+
 [7] Number of neurons in brain: <https://www.pnas.org/doi/10.1073/pnas.1201895109>
+
 [8] Scaling laws for language models: <https://arxiv.org/abs/2001.08361>
+
 [9] Trying to find out how to scale model, dataset and compute: <https://www.deepmind.com/publications/an-empirical-analysis-of-compute-optimal-large-language-model-training>
+
 [10] Free model repository: <https://huggingface.co/models>
+
 [11] Pricing OpenAI <https://openai.com/api/pricing/>

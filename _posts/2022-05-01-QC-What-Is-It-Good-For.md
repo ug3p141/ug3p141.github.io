@@ -12,14 +12,14 @@ Besides these areas there are interesting connections to number theory and a few
 
 References
 
-[1] Google Quantum Supremacy <https://www.nature.com/articles/s41586-019-1666-5>
+[1] Google paper claiming "Quantum Supremacy": <https://www.nature.com/articles/s41586-019-1666-5>
 
 [2] Nature Editorial: <https://www.nature.com/collections/djhfiebiig/>
 
 [3] Schrödinger's equation: <https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation>
 
-[4] Feynman, Simulating Physics with Computers, <https://link.springer.com/article/10.1007/BF02650179>, one can find all articles in 
+[4] Feynman, Simulating Physics with Computers: <https://link.springer.com/article/10.1007/BF02650179>, one can find all articles in this volume online
 
-[5] Google Research Publications, <https://research.google/pubs/?area=quantum-computing>
+[5] Google Research Publications on QC: <https://research.google/pubs/?area=quantum-computing>
 
-[6] Variational Quantum Algorithms, <https://www.nature.com/articles/s42254-021-00348-9>, a review of research on current algorithms for quantum computers
+[6] Variational Quantum Algorithms, a review of research on current algorithms for quantum computers: <https://www.nature.com/articles/s42254-021-00348-9>

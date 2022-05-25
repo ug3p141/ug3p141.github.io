@@ -26,7 +26,7 @@ References
 
 [3] GPT-3 official paper on arxiv: <https://arxiv.org/abs/2005.14165>
 
-[4] Estimate of compute cost: s. Abschnitt D in [3](page 46), compute cost per GPU e.g. Google Cloud approximately 1USD/hour for NVIDIA V100, spec V100 => 7 TFLOPs = 7 10^12 / s, 3.14 10^23 Flops => 3.14 10^23/7x10^12 / 3600 = 10^7 hours => 10 Mio USD, s. details  <https://github.com/ug3p141/nlp_models>
+[4] Estimate of compute cost: s. Abschnitt D in [3] (page 46), compute cost per GPU e.g. Google Cloud approximately 1USD/hour for NVIDIA V100, spec V100 => 7 TFLOPs = 7 10^12 / s, 3.14 10^23 Flops => 3.14 10^23/7x10^12 / 3600 = 10^7 hours => 10 Mio USD, s. details  <https://github.com/ug3p141/nlp_models>
 
 [6] to compare with published data: <https://arxiv.org/abs/2201.11990> (page 2)
 

@@ -2,11 +2,11 @@
 
 The rapid development of new language models within the NLP branch of AI since 2019 has brought about much improved capabilities concerning scope and accuracy. The media hype surrounding OpenAI's GPT-X series of models hasn't gone unnoticed probably [1][2]. These improvements have been mainly brought about by switching to the now ubiquitous transformer architecture and scaling the models to humongous sizes. The last model from OpenAI GPT-3 comes with 750 billion parameters trained on 570 GB of data.
 
-These parameters incur substantial compute costs in training. As a rough estimate one can take as compute resource an NVIDIA V100 GPU with 7 TFLOPs and the estimate for compute effort from the GTP-3 paper [3](page 46) stating compute cost of 3.14E+23 Flops for the largest model. This means an equivalent of 1E7 hours of NVIDIA V100 GPU time. Estimating cost of GPU time with roughly 1 USD the total compute cost for the largest model for one complete training comes in at 10 million USD.[4] Naturally there are additional costs for parameter variation and additional training, storage, commodity costs for hardware etc. not to speak of staff. These are staggering numbers.
+These parameters incur substantial compute costs in training. As a rough estimate one can take as compute resource an NVIDIA V100 GPU with 7 TFLOPs and the estimate for compute effort from the GTP-3 paper [3] (page 46) stating compute cost of 3.14E+23 Flops for the largest model. This means an equivalent of 1E7 hours of NVIDIA V100 GPU time. Estimating cost of GPU time with roughly 1 USD per hour the total compute cost for the largest model for one complete training comes in at 10 million USD.[4] Naturally there are additional costs for parameter variation and additional training, storage, commodity costs for hardware etc. not to speak of staff. These are staggering numbers.
 
 Looking at the development of model size over time one can see an exponential increase over the last few years seeing an order of magnitude increase year over year.
 
-![timeline size of language models] (/assets/nlp_models_sizes_over_time.svg)
+![timeline size of language models](assets/nlp_models_sizes_over_time.svg)
 
 The next model of OpenAI GPT-4 is rumored to come in at 100 trillion parameters (100 x 10E12). It's a bit unscientific but informative to compare this with the number of neurons in the human brain, which features approximately 100 billion neurons (100 x 10E9), that's a thousand times less[7].
 

@@ -2,7 +2,7 @@
 
 The rapid development of new language models within the NLP branch of AI since 2019 has brought about much improved capabilities concerning scope and accuracy. The media hype surrounding OpenAI's GPT-X series of models hasn't gone unnoticed probably [1][2]. These improvements have been mainly brought about by switching to the now ubiquitous transformer architecture and scaling the models to humongous sizes. The last model from OpenAI GPT-3 comes with 750 billion parameters trained on 570 GB of data.
 
-These parameters incur substantial compute costs in training. As a rough estimate one can take as compute resource an NVIDIA V100 GPU with 7 TFLOPs and the estimate for compute effort from the GTP-3 paper [3] (page 46) stating compute cost of 3.14E+23 Flops for the largest model. This means an equivalent of 1E7 hours of NVIDIA V100 GPU time. Estimating cost of GPU time with roughly 1 USD per hour the total compute cost for the largest model for one complete training comes in at 10 million USD.[4] Naturally there are additional costs for parameter variation and additional training, storage, commodity costs for hardware etc. not to speak of staff. These are staggering numbers.
+These parameters incur substantial compute costs in training. As a rough estimate one can take as compute resource an NVIDIA V100 GPU with 7 TFLOPs and the estimate for compute effort from the GTP-3 paper [3] (page 46) stating compute cost of 3.14E+23 Flops for the largest model. This means an equivalent of 1E7 hours of NVIDIA V100 GPU time. Estimating cost of GPU time with roughly 1 USD per hour the total compute cost for the largest model for one complete training comes in at 10 million USD [4]. (This seems to be roughly in line with a short 2020 survey of compute costs of language model training [12]). Naturally there are additional costs for parameter variation and additional training, storage, commodity costs for hardware etc. not to speak of staff. These are staggering numbers.
 
 Looking at the development of model size over time one can see an exponential increase over the last few years seeing an order of magnitude increase year over year.
 
@@ -38,4 +38,6 @@ References
 
 [10] Free model repository: <https://huggingface.co/models>
 
-[11] Pricing OpenAI <https://openai.com/api/pricing/>
+[11] Pricing OpenAI: <https://openai.com/api/pricing/>
+
+[12] 2020 survey of compute costs of NLP models: <https://arxiv.org/abs/2004.08900>

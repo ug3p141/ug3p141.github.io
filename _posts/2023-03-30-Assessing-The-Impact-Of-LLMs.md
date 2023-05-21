@@ -3,7 +3,7 @@
 ![Created using Midjourney](/assets/human_robot_look_at_each_other.png)
 
 ## Introduction
-Since the launch of ChatGPT large language models have taken the world by storm and each enterprise is reevaluating 
+Since the launch of ChatGPT large language models (LLMs) have taken the world by storm and each enterprise is reevaluating 
 its AI strategy and wondering what LLMs generally and commercial models like ChatGPT and Bard especially 
 will mean for their business. In this piece we're trying to look beyond the current hype surrounding the latest models
 and look into the midterm and longterm future of NLP techniques and related areas to give some orientation or more humbly 
@@ -39,78 +39,79 @@ what is to be expected.
 
 - **late 2022**: ChatGPT was released by OpenAI, a model fine-tuned to target conversational usage by a process called reinforcement learning from human feedback (RLHF).
 
-- **early 2023**: a plethora of both commercial models and open source versions of LLMs come force to counter the dominance of ChatGPT
+- **early 2023**: a plethora of both commercial models and open source versions of LLMs come forth to counter the dominance of ChatGPT
 
-## Economic and Scientific Environment
+## Structure of LLMs and Econnomic and Scientific Environment
+A large part of the practical usage of LLMs
+## The GPT-H Hypothesis
 
-### Prerequisites and Conditions for Building, Maintaining and Operating LLMs
+![Created using Midjourney](/assets/kid_arranging_letters_on_the_floor_scrabble.png)
+The capabilities of LLMs in turn dialogue talking, reasoning and instruction following have reached an impressive maturity. These capabilities were discovered by scaling up the models and training them on ever larger text corpora and are therefore referred to as emergent phenomena. It is important to emphasize that they are not built into the models by special training techniques, in fact techniques to bring about these skills are not known. The only technique built into the models and trained is next word prediction.
 
-### Scientific Environment
+The dismissive argument that LLMs "are just next word predictors" which often serves to counter the enthusiam showed by people awestruck with the generated responses of e.g. ChatGPT somewhat misses the point and fails in our opinion to assess the rather striking and compelling hypothesis which we call the **GPT-H hypothesis**: Insofar as LLMs generate responses which are eerily close or even indistinguishable to human utterances we have two alternatives.
 
-### LLM Economy
+1. We hit upon another model of language intelligence different from the human brain which is capable of generating nearly the same language artifacts as humans.
 
-## Further Development
+2. The human ability to produce, use and reason in language shares a common mechanism with LLMs and the technique of next word prediction.
 
-### Current Status
+The second alternative or simplified the statement that humans are in some way General Pretrained Transformers may be outrageous to many. But scientific history should caution us on our thinking that humankind has a special place in nature. As astronomy refuted that we are at the center of the universe and evolution replaced us from the crown of creation to the animal kingdom, AI may teach us that cognition, language and thinking is not as special as we'd like to think. This hypothesis is kind of a glorified Chomsky theory of language: Where Chomsky tried to construct language as an innate mechanism of formal language models built into the human brain, LLMs kind of repeat this with a more complicated and sophisticated version on a probabilistic basis.
 
-### The GPT-H Hypothesis
+Pondering the impact of LLMs one should keep in mind what this hypothesis entails for the advancement of LLMs or AI in general: Namely the explosive hypothesis that LLMs may be likely in the future to invade all kinds of activities connected with language use, thinking and creativity. 
 
-The capabilities of LLMs in turn-dialogue talking, reasoning and instruction following have reached an impressive maturity. These capabilities were discovered by scaling up the models and training them on ever larger text corpora and are therefore referred to as emergent phenomena. It is important to emphasize that they are not built into the models by special training techniques, in fact techniques to bring about these skills are not known. The only technique built into the models and trained is next word prediction.
-
-### Gaps and Features
+## Gaps and Features
 - Hallucinations
 - Adversarial Prompting
 - Missing Reference to Ground Truth
 - QA
 
-#### Access to UpToDate Knowledge
+### Access to UpToDate Knowledge
+### Long Term Memory
 
-#### Continuous Learning
+### Continuous Learning
 
-#### Tool Use
+### Tool Use
 
-#### Long Term Memory
+## Long Term Development
 
-### Long Term Development
+### Integrated AI
 
-#### Integrated AI
+### Generative AI
 
-#### Generative AI
+### Self Referential AI
 
-#### Self Referential AI
+### Physical Access
 
-#### Physical Access
+## Immediate and Near Term Impacts
 
-## Impacts
+### End of SE Domination
 
-### Immediate and Near Term Impacts
+### Document Creation
 
-#### End of SE Domination
+### Code Generation
 
-#### Document Creation
+### Use of LLMs within Programs
 
-#### Code Generation
+## Mid Term Impacts
 
-### Mid Term Impacts
+### Front End to Everything
 
-#### Front End to Everything
+### Computer Program Generation
 
-#### Computer Program Generation
 
-#### Use of LLMs within Programs
+## Long Term Impacts
 
-### Long Term Impacts
+### Self Referential AI And Exponential Acceleration
 
-#### Self Referential AI And Exponential Acceleration
+### Knowledge Creation and Science
 
-#### Knowledge Creation and Science
+### Creative Industry
 
-#### Creative Industry
+### Engineering
 
-#### Engineering
+## Economic Impacts
 
-### Economic Impacts
+### Rise of Mega Monopolies
 
-#### Rise of Mega Monopolies
+### Industry Domination
 
-#### Industry Domination
+## Conclusion

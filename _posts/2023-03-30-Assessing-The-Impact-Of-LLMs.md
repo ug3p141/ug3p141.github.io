@@ -13,6 +13,9 @@ into somewhat philosophical territory in the hope to get a glimpse of where all 
 what is to be expected.
 
 ## History
+
+![Created using Mathematica](/assets/timeline_of_large_language_models.png)
+
 - **Late 1980s to mid 1990s**: The foundations of neural networks and basic language models are developed.
 
 - **2001**: Yoshua Bengio, Réjean Ducharme, Pascal Vincent, and Christian Janvin published a paper on a neural probabilistic language model, a significant early work in using neural networks for language processing.
@@ -42,7 +45,27 @@ what is to be expected.
 - **early 2023**: a plethora of both commercial models and open source versions of LLMs come forth to counter the dominance of ChatGPT
 
 ## Structure of LLMs and Econnomic and Scientific Environment
-A large part of the practical usage of LLMs
+Large language models (LLMs) like GPT-4 and its successors are based on a type of artificial neural network known as a Transformer, which was introduced in a paper by Vaswani et al. in 2017 titled "Attention is All You Need". These models are designed to understand the context of a piece of text and generate text that aligns with that context.
+
+The structure of a Transformer model is largely divided into an encoder and a decoder, although in models like GPT-3, only the decoder is used. Each part consists of multiple layers of self-attention and feed-forward neural networks. 
+
+One of the crucial components of Transformer-based models is the attention mechanism, which allows the model to focus on different parts of the input sequence when generating output. In particular, these models use a type of attention mechanism known as "scaled dot-product attention." 
+
+The size of LLMs is often characterized by the number of parameters they have. For example, GPT-3 has 175 billion parameters. These parameters are the aspects of the model that are learned from the training data.
+
+In terms of training techniques, these models are trained on a large corpus of text data. During training, the models learn to predict the next word in a sequence of words. This is done using a method known as maximum likelihood estimation (MLE), where the goal is to maximize the probability of the next word given the previous words in the sequence.
+
+The training process requires substantial computational resources and is typically carried out on graphics processing units (GPUs) or tensor processing units (TPUs) due to their ability to perform parallel computations, which is essential for handling the large matrices used in these models.
+
+The training data is passed through the model in batches, and the model's predictions are compared with the actual next words in the sequence. The difference between the predictions and the actual words, known as the loss, is calculated using a function like cross-entropy loss.
+
+To update the model's parameters and minimize the loss, an optimization algorithm such as Adam or Stochastic Gradient Descent (SGD) is used. This is done through a process known as backpropagation.
+
+After training, these models can generate new text by taking in a prompt and producing a sequence of words, predicting each next word based on the previous ones.
+
+Recent advancements in LLM training have involved techniques such as unsupervised learning, transfer learning, and fine-tuning, where a model trained on a general task is adapted for a more specific one. These methods have allowed LLMs to achieve high performance across a variety of tasks. 
+
+It's also important to note that training LLMs comes with challenges, including the need for large amounts of data and computational resources, potential bias in the training data, and the risk of the model generating harmful or misleading content.
 ## The GPT-H Hypothesis
 
 ![Created using Midjourney](/assets/kid_arranging_letters_on_the_floor_scrabble.png)

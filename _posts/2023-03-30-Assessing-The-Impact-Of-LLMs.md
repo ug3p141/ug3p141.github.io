@@ -1,6 +1,7 @@
 # Assessing the Impact of Large Language Models
 
-![Created using Midjourney](/assets/human_robot_look_at_each_other.png)
+![Human and Robot Looking at each Other](/assets/human_robot_look_at_each_other.png)
+Created using Midjourney
 
 ## Introduction
 Since the launch of ChatGPT large language models (LLMs) have taken the world by storm and each enterprise is reevaluating 
@@ -18,31 +19,31 @@ what is to be expected.
 
 - **Late 1980s to mid 1990s**: The foundations of neural networks and basic language models are developed.
 
-- **2001**: Yoshua Bengio, Réjean Ducharme, Pascal Vincent, and Christian Janvin published a paper on a neural probabilistic language model, a significant early work in using neural networks for language processing.
+- **2001**: Yoshua Bengio, Réjean Ducharme, Pascal Vincent, and Christian Janvin publish a paper on a neural probabilistic language model, a significant early work in using neural networks for language processing.
 
-- **2003**: Bengio and his team continued to improve upon their initial models, which helped spark broader interest in the field.
+- **2003**: Bengio and his team continu to improve upon their initial models, which helped spark broader interest in the field.
 
-- **2013**: Word2Vec, developed by Tomas Mikolov and his team at Google, made a significant impact by effectively converting words into vectors, which could then be processed by neural networks in a meaningful way.
+- **2013**: Word2Vec, developed by Tomas Mikolov and his team at Google, makes a significant impact by effectively converting words into vectors, which can then be processed by neural networks in a meaningful way.
 
-- **2014**: Sequence to Sequence Learning was introduced by Ilya Sutskever, Oriol Vinyals, and Quoc Le. This was a major advancement, as it led to the development of models that could generate more coherent and meaningful sequences of text.
+- **2014**: Sequence to Sequence Learning is introduced by Ilya Sutskever, Oriol Vinyals, and Quoc Le. This was a major advancement, as it led to the development of models that could generate more coherent and meaningful sequences of text.
 
-- **2015**: Attention Mechanism was introduced, making it possible for models to learn to focus on different parts of the input sequence when generating output. This improved the ability of models to handle long sequences of text.
+- **2015**: Attention Mechanism is introduced, making it possible for models to learn to focus on different parts of the input sequence when generating output. This improves the ability of models to handle long sequences of text.
 
-- **2018**: Transformer architecture was introduced in the paper "Attention is All You Need" by Vaswani et al. It was a key development because it enabled much more effective training of large language models.
+- **2018**: The Transformer architecture is introduced in the paper "Attention is All You Need" by Vaswani et al. It was a key development because it enabled much more effective training of large language models.
 
-- **2018**: BERT (Bidirectional Encoder Representations from Transformers) was developed by Google. BERT was significant because it was trained to predict missing words in a sentence, rather than just predicting the next word in a sequence.
+- **2018**: BERT (Bidirectional Encoder Representations from Transformers) is developed by Google. BERT was significant because it was trained to predict missing words in a sentence, rather than just predicting the next word in a sequence.
 
-- **2019**: GPT-2, developed by OpenAI, made a significant leap in the size of models and their ability to generate surprisingly human-like text. GPT-2 was also notable because of the decision by OpenAI to initially not release the full model due to concerns about potential misuse.
+- **2019**: GPT-2, developed by OpenAI, makes a significant leap in the size of models and their ability to generate surprisingly human-like text. GPT-2 is also notable because of the decision by OpenAI to initially not release the full model due to concerns about potential misuse.
 
-- **2020**: GPT-3 was released by OpenAI. With 175 billion parameters, GPT-3 was an order of magnitude larger than any previous model, and its capabilities reflected that size increase.
+- **2020**: GPT-3 is released by OpenAI. With 175 billion parameters, GPT-3 is an order of magnitude larger than any previous model, and its capabilities reflects that size increase.
 
-- **2021**: Large language models started to see wide deployment in commercial applications, such as customer service, content generation, tutoring, and more.
+- **2021**: Large language models start to see wide deployment in commercial applications, such as customer service, content generation, tutoring, and more.
 
-- **early 2022**: GPT-3.5 was released by OpenAI. These models were described as more capable than previous versions and were trained on data up to June 2021.
+- **early 2022**: GPT-3.5 is released by OpenAI. These models are more capable than previous versions and were trained on data up to June 2021.
 
-- **late 2022**: ChatGPT was released by OpenAI, a model fine-tuned to target conversational usage by a process called reinforcement learning from human feedback (RLHF).
+- **late 2022**: ChatGPT is released by OpenAI, a model fine-tuned to target conversational usage by a process called reinforcement learning from human feedback (RLHF).
 
-- **early 2023**: a plethora of both commercial models and open source versions of LLMs come forth to counter the dominance of ChatGPT
+- **early 2023**: a plethora of both commercial models and open source versions of LLMs come forth and try to counter the dominance of ChatGPT
 
 ## Structure of LLMs and Econnomic and Scientific Environment
 Large language models (LLMs) like GPT-4 and its successors are based on a type of artificial neural network known as a Transformer, which was introduced in a paper by Vaswani et al. in 2017 titled "Attention is All You Need". These models are designed to understand the context of a piece of text and generate text that aligns with that context.
@@ -71,7 +72,7 @@ It's also important to note that training LLMs comes with challenges, including 
 ![Created using Midjourney](/assets/kid_arranging_letters_on_the_floor_scrabble.png)
 The capabilities of LLMs in turn dialogue talking, reasoning and instruction following have reached an impressive maturity. These capabilities were discovered by scaling up the models and training them on ever larger text corpora and are therefore referred to as emergent phenomena. It is important to emphasize that they are not built into the models by special training techniques, in fact techniques to bring about these skills are not known. The only technique built into the models and trained is next word prediction.
 
-The dismissive argument that LLMs "are just next word predictors" which often serves to counter the enthusiam showed by people awestruck with the generated responses of e.g. ChatGPT somewhat misses the point and fails in our opinion to assess the rather striking and compelling hypothesis which we call the **GPT-H hypothesis**: Insofar as LLMs generate responses which are eerily close or even indistinguishable to human utterances we have two alternatives.
+The dismissive argument that LLMs "are just next word predictors" which often serves to counter the enthusiam expressed by people awestruck with the generated responses of e.g. ChatGPT somewhat misses the point and fails in our opinion to assess the rather striking and compelling hypothesis which we call the **GPT-H hypothesis**: Insofar as LLMs generate responses which are eerily close or even indistinguishable to human utterances we have two alternatives.
 
 1. We hit upon another model of language intelligence different from the human brain which is capable of generating nearly the same language artifacts as humans.
 
@@ -79,7 +80,7 @@ The dismissive argument that LLMs "are just next word predictors" which often se
 
 The second alternative or simplified the statement that humans are in some way General Pretrained Transformers may be outrageous to many. But scientific history should caution us on our thinking that humankind has a special place in nature. As astronomy refuted that we are at the center of the universe and evolution replaced us from the crown of creation to the animal kingdom, AI may teach us that cognition, language and thinking is not as special as we'd like to think. This hypothesis is kind of a glorified Chomsky theory of language: Where Chomsky tried to construct language as an innate mechanism of formal language models built into the human brain, LLMs kind of repeat this with a more complicated and sophisticated version on a probabilistic basis.
 
-Pondering the impact of LLMs one should keep in mind what this hypothesis entails for the advancement of LLMs or AI in general: Namely the explosive hypothesis that LLMs may be likely in the future to invade all kinds of activities connected with language use, thinking and creativity. 
+Pondering the impact of LLMs one should keep in mind what this hypothesis entails for the advancement of LLMs or AI in general: Namely the explosive thesis that LLMs may be likely in the future not only to invade all kinds of activities connected with language use, thinking and creativity but also to completely replace humans in many fields.  
 
 ## Gaps and Features
 - Hallucinations

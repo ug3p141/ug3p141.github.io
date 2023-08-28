@@ -24,7 +24,7 @@ A generative model is a joint probability distribution $p(x)$, for $x \in X$ whe
 
 Well that's a bit abstract. Let's try to make it more concrete. Usually we are given the data, say a bunch of pictures of [celebrities](https://paperswithcode.com/dataset/celeba) and our task in generative AI is to create another picture of a celebrity matching the given data.
 
-![Celebrities](/assets/CelebA-0000000002-eeb5e196_D0ltvot.jpg)
+![Celebrities](/assets/CelebA-0000000002-eeb5e196_D0ltvot.jpg =470x320)
 *Celebrities from the CelebA dataset*
 
 The central tenet of generative AI is that all we have to do is learn the probability distribution of the data and sample from the learned distribution. So this leads to the next questions: How is the probability distribution actually defined in terms of the data? And what does sampling from a distribution mean exactly?
@@ -54,7 +54,9 @@ The answer to this is found in the foundational paper of diffusion models [1] by
 The main idea of diffusion models is to split up sampling in a two-step process: First we sample from a simple distribution and then move the sampled point into the target distribution. Basically that's it and the intricacies come up with how we actually move the point to the target distribution, which is part two below in my post.
 
 For some reason this paper went unnoticed for several years
-![Citation count on paper by Sohl-Dickstein](/assets/sohlpapercitations.png)
+
+![Citation count on paper by Sohl-Dickstein](/assets/sohlpapercitations.png =200x150)
+
 *Number of citations of the foundation paper by Sohl-Dickstein et al. over time*
 
 until Sohl-Dickstein and Song published a follow-up paper in 2020 [2] which was picked up by the AI community and led to a flurry of papers and implementations.
@@ -69,7 +71,7 @@ where $dW$ is the noise actually Brownian motion which simply means that at each
 
 Here is an illustration of an SDE in two dimensions with pure noise, i.e. $f(t) = 0$ and $g(t) = 1$:
 
-![Random walk in 2D](/assets/stochastic_points.png)
+![Random walk in 2D](/assets/stochastic_points.png =300x300)
 *Random walk in 2D*
 
 The red dots mark the random starting point.

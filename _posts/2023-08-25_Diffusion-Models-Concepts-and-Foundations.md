@@ -68,6 +68,7 @@ $dx(t) = f(t) dt + g(t) dW$
 where $dW$ is the noise actually Brownian motion which simply means that at each time step you draw a random variable from a normal distribution, scale it with the time step and add it to get the direction in which x(t) is heading next.
 
 Here is an illustration of an SDE in two dimensions with pure noise, i.e. $f(t) = 0$ and $g(t) = 1$:
+
 ![Random walk in 2D](/assets/stochastic_points.png)
 *Random walk in 2D*
 

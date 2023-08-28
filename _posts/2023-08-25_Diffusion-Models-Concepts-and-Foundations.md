@@ -24,7 +24,7 @@ A generative model is a joint probability distribution $p(x)$, for $x \in X$ whe
 
 Well that's a bit abstract. Let's try to make it more concrete. Usually we are given the data, say a bunch of pictures of [celebrities](https://paperswithcode.com/dataset/celeba) and our task in generative AI is to create another picture of a celebrity matching the given data.
 
-![Celebrities](/assets/CelebA-0000000002-eeb5e196_D0ltvot.jpg =470x320)
+![Celebrities](/assets/CelebA-0000000002-eeb5e196_D0ltvot.jpg)
 *Celebrities from the CelebA dataset*
 
 The central tenet of generative AI is that all we have to do is learn the probability distribution of the data and sample from the learned distribution. So this leads to the next questions: How is the probability distribution actually defined in terms of the data? And what does sampling from a distribution mean exactly?
@@ -55,7 +55,7 @@ The main idea of diffusion models is to split up sampling in a two-step process:
 
 For some reason this paper went unnoticed for several years
 
-![Citation count on paper by Sohl-Dickstein](/assets/sohlpapercitations.png =200x150)
+![Citation count on paper by Sohl-Dickstein](/assets/sohlpapercitations.png)
 
 *Number of citations of the foundation paper by Sohl-Dickstein et al. over time*
 
@@ -71,7 +71,7 @@ where $dW$ is the noise actually Brownian motion which simply means that at each
 
 Here is an illustration of an SDE in two dimensions with pure noise, i.e. $f(t) = 0$ and $g(t) = 1$:
 
-![Random walk in 2D](/assets/stochastic_points.png =300x300)
+![Random walk in 2D](/assets/stochastic_points.png)
 *Random walk in 2D*
 
 The red dots mark the random starting point.

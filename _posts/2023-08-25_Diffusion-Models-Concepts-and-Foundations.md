@@ -107,7 +107,7 @@ To wrap it up I want to mention that the most difficult part for me is all the j
 
 Connecting with the various implementations there are a few things to mention:
 1. Discretized versions of an SDE are Markov processes and this is besides SDEs the other most often cited implementation pioneered by Ho et al. [4].
-2. Form an abstract point of view we need a mapping between two distributions: The one we sample from and our target. There are various mathematical theories which existed long before diffusion models which explore this topic. One of them is optimal transport theory which is used in the implementation of the Wasserstein Autoencoder. Other theories are termed Schrödinger bridges, stochastic control theory and optimal control theory. All these play into the main idea of trying to make an efficient connection between two distributions. 
+2. From an abstract point of view we need a mapping between two distributions: The one we sample from and our target. There are various mathematical theories which existed long before diffusion models which explore this topic. One of them is optimal transport theory which is used in the implementation of the Wasserstein Autoencoder. Other theories are termed Schrödinger bridges, stochastic control theory and optimal control theory. All these play into the main idea of trying to make an efficient connection between two distributions. 
 
 I hope this was helpful if you are new to the topic. If you have any questions or comments please let me know.
 

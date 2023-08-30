@@ -135,6 +135,8 @@ Connecting with the various implementations there are a few things to mention:
 1. Discretized versions of an SDE are Markov processes and this is besides SDEs the other most often cited implementation pioneered by Ho et al. [4].
 2. From an abstract point of view we need a mapping between two distributions: The one we sample from and our target. There are various mathematical theories which existed long before diffusion models which explore this topic. One of them is optimal transport theory which is used in the implementation of the Wasserstein Autoencoder. Other theories are termed Schrödinger bridges, stochastic control theory and optimal control theory. All these play into the main idea of trying to make an efficient connection between two distributions. 
 
+3. At least conceptually the process is very simple: You run all your data through the forward process, learn the log gradient via a neural network and can then sample from the simple distribution and run the sample point through the backward process. I still find it mysterious that this works so well, because if you think of it, our space is very high dimensional and even very large point clouds can only sample it very sparsely. I tend to think that this signifies that the data distribution must be very smooth and probably restricted to some much smaller space. But this idea seems to be underexplored.
+
 I hope this was helpful if you are new to the topic. If you have any questions or comments please let me know.
 
 References:

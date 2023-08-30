@@ -38,7 +38,7 @@ Here is the simplest nontrivial example of a probability distribution in two dim
 
 So far so good. But if we have the distribution in terms of the data, we can now simply sample from it to generate a new point which in our example would be a new picture. So what does sampling mean exactly and how can we do it?
 
-As we can infer from the picture above sampling from a distribution means generating data point which are distributed according to the probability density. Thus it doesn't make sense to talk about sampling one point, one has to come up with a procedure which generates hypothetically an infinity of points. Now the main work horse of sampling is the markov chain monte carlo algorithm (MCMC) and its various refinements.
+As we can infer from the picture above sampling from a distribution means generating data points which are distributed according to the probability density. Thus it doesn't make sense to talk about sampling one point, one has to come up with a procedure which generates hypothetically an infinity of points. Now the main work horse of sampling is the markov chain monte carlo algorithm (MCMC) and its various refinements.
 
 The basic idea with this algorithm to simply start somewhere in space, then move in a random direction, test if it goes uphill in the given probability distribution and if so accept the move. If it goes downhill you accept it only with a certain probability otherwise reject it and stay where you are. That's all, the implementation is really a only a few lines of code. The difficult part is proving mathematically that this algorithm fulfills the definition of sampling i.e. all the points generated are distributed in the end according to the given probability distribution.
 
@@ -74,7 +74,7 @@ Here is an illustration of an SDE in two dimensions with pure noise, i.e. $f(t) 
 ![Random walk in 2D](/assets/stochastic_points.png)
 *Random walk in 2D*
 
-The red dots mark the random starting point.
+The red dots mark the random starting points.
 
 It obviously doesn't make sense to ask about the reversal of time for an individual path because it is random. But you can consider the following question: If I distribute many points as starting points according to a given distribution and evolve all points according to my SDE, then my initial distribution will change over time. If I record all the distributions at each time step, can I find a similar SDE such that the final distribution changes back to the original?
 
@@ -94,7 +94,29 @@ An animation of a very simple distribution in two dimensions evolving over time 
 ![2D double gaussian evolving to simple gaussian](/assets/dist_anim.gif)
 *2D double gaussian evolving to simple gaussian*
 
-This result lay dormant for fourty years until Song, Sohl-Dickstein et al. put it to practial use: You have to diffuse your data points e.g. your images with noise and record the resulting intermediate distributions. Then for generating a new image from your target distribution you simply sample a point from a normal distribution in appropriate dimensions which is fast and efficient and run it through the reverse process.
+Just for the fun of it let's take a short break and compute the actual distributions generated in the above picture by hand. As initial distribution I took a mixture of two gaussians with means at $m_1=(-1,-1)$ and $m_2=(2,5)$ and standard deviation 1 in both directions each weighted with 0.5. So the PDF is given by:
+
+$p_0(x,y) = \frac{1}{2} \left( \cal{N}(m_1,\mathbf{1_2})(x,y) + \cal{N}(m_1,\mathbf{1_2})(x,y) \right)$
+
+Now if you start the simple SDE above with a point at the origin and compute many paths, theory tells us that the distribution of the endpoints after time $t$ is given by $\cal{N}(0,t \mathbf{1_2})$ where $\mathbf{1_2}$ is the two dimensional identity matrix. But we want the initial points not concentrated on the origin but distributed according to the above mixture of gaussians. Starting with a distribution $p_0$ of initial points the end distribution is given by the convolution of the two distributions:
+
+$p_t(x,y) = \int p_0(x',y') \cal{N}(0,t \mathbf{1_2})(x-x',y-y') dx' dy'$
+
+Looks hard but it's actually not. The convolution of two gaussians is again a gaussian with mean given by the sum of the means and the variance given by the sum of the variances. So without any computation we get:
+
+$p_t(x,y) = \frac{1}{2} \left( \cal{N}(m_1,(1+t)\mathbf{1_2})(x,y) + \cal{N}(m_1,(1+t)\mathbf{1_2})(x,y) \right)$
+
+And this is exactly what we see in the animation above. The two initial gaussians are smeared out and the final distribution is a single gaussian with mean at the origin and variance 1+t in both directions. At least approximately for large t because then you can neglect the mean values compared to the variance.
+
+From this result we can also compute the gradient of the log proability and visualize it:
+
+![Gradient of log probability](/assets/vectorplot.gif)
+*Gradient of log probability*
+
+And if you look at it this makes perfect sense because the gradient points in the direction of the steepest ascent of the probability distribution. So the gradient is initially pointing towards the two peaks and finally towards the origin. Hope this makes the mysterious gradient a bit more tangible.
+
+Coming back the the main topic:
+The result of Anderson's lay dormant for fourty years until Song, Sohl-Dickstein et al. put it to practial use: You have to diffuse your data points e.g. your images with noise and record the resulting intermediate distributions. Then for generating a new image from your target distribution you simply sample a point from a normal distribution in appropriate dimensions which is fast and efficient and run it through the reverse process.
 
 The only complicated part is learning the gradient of the log probability at all intermediate times which is done via a neural network. But this is only done once and then you can sample as many points as you want.
 

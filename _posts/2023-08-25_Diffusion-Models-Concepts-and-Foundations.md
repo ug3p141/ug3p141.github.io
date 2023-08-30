@@ -96,9 +96,11 @@ An animation of a very simple distribution in two dimensions evolving over time 
 
 Just for the fun of it let's take a short break and compute the actual distributions generated in the above picture by hand. As initial distribution I took a mixture of two gaussians with means at $m_1=(-1,-1)$ and $m_2=(2,5)$ and standard deviation 1 in both directions each weighted with 0.5. So the PDF is given by:
 
-$p_0(x,y) = \frac{1}{2} \left( \cal{N}(m_1,\mathbf{1_2})(x,y) + \cal{N}(m_1,\mathbf{1_2})(x,y) \right)$
+$p_0(x,y) = \frac{1}{2} \left( \cal{N}(m_1,\mathbf{1_2})(x,y) + \cal{N}(m_2,\mathbf{1_2})(x,y) \right)$
 
-Now if you start the simple SDE above with a point at the origin and compute many paths, theory tells us that the distribution of the endpoints after time $t$ is given by $\cal{N}(0,t \mathbf{1_2})$ where $\mathbf{1_2}$ is the two dimensional identity matrix. But we want the initial points not concentrated on the origin but distributed according to the above mixture of gaussians. Starting with a distribution $p_0$ of initial points the end distribution is given by the convolution of the two distributions:
+where $\mathbf{1_2}$ is the two dimensional identity matrix.
+
+Now if you start the simple SDE above with a point at the origin and compute many paths, theory tells us that the distribution of the endpoints after time $t$ is given by $\cal{N}(0,t \mathbf{1_2})$. But we want the initial points not concentrated on the origin but distributed according to the above mixture of gaussians. Starting with a distribution $p_0$ of initial points the end distribution is given by the convolution of the two distributions:
 
 $p_t(x,y) = \int p_0(x',y') \cal{N}(0,t \mathbf{1_2})(x-x',y-y') dx' dy'$
 
@@ -115,7 +117,7 @@ From this result we can also compute the gradient of the log proability and visu
 
 And if you look at it this makes perfect sense because the gradient points in the direction of the steepest ascent of the probability distribution. So the gradient is initially pointing towards the two peaks and finally towards the origin. Hope this makes the mysterious gradient a bit more tangible.
 
-Coming back the the main topic:
+Coming back to the main topic:
 The result of Anderson's lay dormant for fourty years until Song, Sohl-Dickstein et al. put it to practial use: You have to diffuse your data points e.g. your images with noise and record the resulting intermediate distributions. Then for generating a new image from your target distribution you simply sample a point from a normal distribution in appropriate dimensions which is fast and efficient and run it through the reverse process.
 
 The only complicated part is learning the gradient of the log probability at all intermediate times which is done via a neural network. But this is only done once and then you can sample as many points as you want.
